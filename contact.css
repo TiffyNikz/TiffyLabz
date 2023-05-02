@@ -1,0 +1,152 @@
+/* contact us */
+
+
+.form h1 {
+    font-weight: bolder;
+    font-size: 40px;
+    color: rgb(4, 64, 177);
+    box-shadow: 8px 8px 8px rgb(12, 4, 54);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0);
+    
+}
+
+.form {
+    width: 100%;
+    height: 100%S;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+form {
+    width: 90%;
+    max-width: 600px;
+}
+
+.input-group {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 3px solid #0b0069;
+    color: #000000;
+    background: transparent;
+    font-size: 15px;
+}
+
+label {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #000000;
+    text-shadow: 2px 2px 2px#ffffff;
+    cursor: text;
+    transition: 0.2s;
+}
+
+button {
+    padding: 10px 0;
+    color: #000000;
+    text-shadow: 2px 2px 2px#ffffff;
+    outline: none;
+    border: 3px solid  #0b0069;
+    background: transparent;
+    font-size: 15px;
+    width: 100%;
+    cursor: pointer;
+}
+input:focus~label, 
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label 
+{
+    top: -35px;
+    font-size: 14px;
+}
+
+.namephone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.namephone .input-group {
+    flex-basis:48%;
+
+}
+
+/* card design */
+
+
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+}
+
+:root {
+    --card-height:100vh;
+    --card-width:100vh;
+}
+
+#qwert {
+    background: #90e6e6b2;
+    width:var(--card-width);
+    height: var(--card-height);
+    padding:3px ;
+    position: relative;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: 1rem;
+    color: rgba(33, 160, 219, 0.918);
+    margin-left: 250px;
+}
+
+
+#qwert::before {
+    content: "";
+    width:104%;
+    height: 102%;
+    border-radius: 8px;
+    background-image: linear-gradient(var(--rotate),#3700ff, #ffffff 43%, #09bbd3 );
+        position: absolute;
+        z-index: -1;
+        top:-1%;
+        left: -2%;
+        animation:spin 2s linear infinite;
+}
+
+#qwert::after {
+    position:absolute;
+    content: "";
+    top:calc(var(--card-height)6);
+    left:0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin:0 auto;
+    transform: scale(0.8);
+    filter: blur(calc(var(--card-height)/6));
+    background-image: linear-gradient(var(--rotate),#3700ff, #ffffff 43%, #09bbd3);
+    opacity: 1;
+    transition: opacity .5s;
+    animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+    0% {--rotate:0deg;}
+
+
+100% {--rotate:360deg;}
+}
