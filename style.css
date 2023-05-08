@@ -98,6 +98,10 @@ background: rgb(11, 211, 211);
     align-items: center;
 }
 
+#serve {
+    box-shadow: 8px 8px 8px #06dbeb;
+}
+
 /*facilities */
 
 .facility {
@@ -107,10 +111,18 @@ background: rgb(11, 211, 211);
     align-items: center;
 }
 
+.faci article{
+    max-height: 750px;
+    min-height: 750px;
+    height: 100%;
+}
+
 .image-box img {
     width: 100%;
     display: block;
     border-radius: 0px;
+    max-height: 300px;
+    min-height: 300px;
 }
 
 .image-box {
@@ -138,7 +150,29 @@ article {
     line-height: 1.5;
     background: rgba(20, 170, 196, 0.541);
     border-radius: 5px;
+    max-height: 250px;
+    min-height: 250px;
+    position: relative;
+    overflow-y: scroll;
 }
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px transparent; 
+  }
+
+::-webkit-scrollbar-thumb {
+    background: aqua; 
+    border-radius: 10px;
+  }
+
+::-webkit-scrollbar-thumb:hover {
+    background: aqua; 
+  }
+  
 
 .content-fac a {
     text-align: center;
@@ -179,48 +213,36 @@ article {
 
 /* Location */
 
-.location { 
+.img{
+    margin-top: 10px;
+    width: 100%;
+    height:100%
+}
+
+.img:hover{
+    transition: 1s;
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+#locate {
     position:relative;
     border: 10px;
     border-radius: 1pc;
     box-sizing: border-box;
     padding: 5px;
     margin-top: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
-.location h2 {
-    font-weight: bolder;
+#locate h3  {
+    font-weight: 150;
     text-align: center;
     margin-bottom: 10px;
     font-size: 40px;
-
+    margin-top: 8px;
 }
-
-.location-col {
-    display:inline-block;
-    margin: 30px;
-    position: relative;
-    overflow: hidden;
-}
-.location-col img {
-    width:100%}
-
-
-.col {
-    text-align: center;
-}
-    
-.img{
-    margin: 20px;
-    max-width: 300px;
-    min-height: 300px;
-}
-    
-.img:hover{
-    transition: 1s;
-    transform: scale(1.1);
-}
-
 
 /* services */
 .services {
@@ -232,157 +254,91 @@ article {
 
 /* contact us */
 
-
-.form h1 {
-    font-weight: bolder;
-    font-size: 40px;
-    color: rgb(4, 64, 177);
-    box-shadow: 8px 8px 8px rgb(12, 4, 54);
-    text-shadow: 2px 2px 2px rgba(0, 0, 0);
-    
-}
-
-.form {
-    width: 100%;
-    height: 100%S;
-    margin: 10px;
+.banner{
+    min-height: 100vh;
+    background: url("pictures/experiment-lab.gif") center/cover no-repeat;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-} 
+    align-items: center;
+    padding-bottom: 20px;
+    color: #053070;
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
+    font-size: 20px;
 
-form {
+
+}
+.banner p { 
+    color: #053070;
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
+    font-size: 50px;
+    margin-bottom: 1px;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: 420px 420px;
+}
+.card-img{
+    background: url("pictures/Logoz.png") center/cover no-repeat;
+}
+.banner h2{
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+}
+.card-content{
+    background:linear-gradient(rgba(77, 181, 230, 0.5), rgba(48, 59, 155, 0.295));
+    height: 400px;
+}
+.card-content h3{
+    text-align: center;
+    color: #05038d;
+    padding: 25px 0 10px 0;
+    font-size: 28px;
+    font-weight: 500;
+}
+.form-row{
+    display: flex;
     width: 90%;
-    max-width: 600px;
+    margin: 0 auto;
 }
-
-.input-group {
-    margin-bottom: 30px;
-    position: relative;
-}
-
-input, textarea {
+form select, form input{
+    background-color: #0d4599c4;
+    display: block;
     width: 100%;
-    padding: 10px;
-    outline: 0;
-    border: 3px solid #0b0069;
-    color: #000000;
-    background: transparent;
+    margin: 15px 12px;
+    padding: 5px;
     font-size: 15px;
-}
-
-label {
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding: 10px;
-    color: #000000;
-    text-shadow: 2px 2px 2px#ffffff;
-    cursor: text;
-    transition: 0.2s;
-}
-
-button {
-    padding: 10px 10px;
-    color: #000000;
-    text-shadow: 2px 2px 2px#ffffff;
     outline: none;
-    border: 3px solid  #0b0069;
-    background: transparent;
-    font-size: 15px;
-    width: 100%;
+    border: none;
+    border-bottom: 1px solid #3e11b9;
+    font-weight: 300;
+}
+form input[type = text], form input::placeholder, select{
+    color: #ffffff;
+}
+
+form input[type = submit]{
+    color: #fff;
+    font-weight: bold ;
+    background: #1fa0c0;
+    padding: 12px 0;
+    border-radius: 4px;
     cursor: pointer;
 }
-input:focus~label, 
-input:valid~label,
-textarea:focus~label,
-textarea:valid~label 
-{
-    top: -35px;
-    font-size: 14px;
+form input[type = submit]:hover{
+    opacity: 0.9;
 }
 
-.namephone {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+@media(max-width: 992px){
+    .card-container{
+        grid-template-columns: 100%;
+        width: 100vw;
+    }
+    .card-img{
+        height: 330px;
+    }
 }
-
-.namephone .input-group {
-    flex-basis:48%;
-
-}
-
-/* card design */
-
-
-@property --rotate {
-    syntax: "<angle>";
-    initial-value: 132deg;
-    inherits: false;
-}
-
-:root {
-    --card-height:90vh;
-    --card-width:100vh;
-}
-
-#contact-us {
-    background: #90e6e6b2;
-    width:var(--card-width);
-    height: var(--card-height);
-    padding:3px ;
-    position: relative;
-    border-radius: 6px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    font-size: 1rem;
-    color: rgba(33, 160, 219, 0.918);
-    margin-left: 250px;
-}
-
-
-#contact-us::before {
-    content: "";
-    width:104%;
-    height: 102%;
-    border-radius: 8px;
-    background-image: linear-gradient(var(--rotate),#3700ff, #ffffff 43%, #09bbd3 );
-        position: absolute;
-        z-index: -1;
-        top:-1%;
-        left: -2%;
-        animation:spin 2s linear infinite;
-}
-
-#contact-us::after {
-    position:absolute;
-    content: "";
-    top:calc(var(--card-height)6);
-    left:0;
-    right: 0;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    margin:0 auto;
-    transform: scale(0.8);
-    filter: blur(calc(var(--card-height)/6));
-    background-image: linear-gradient(var(--rotate),#3700ff, #ffffff 43%, #09bbd3);
-    opacity: 1;
-    transition: opacity .5s;
-    animation: spin 2.5s linear infinite;
-}
-
-@keyframes spin {
-    0% {--rotate:0deg;}
-
-
-100% {--rotate:360deg;}
-}
-
 
 /* footer */
 footer {

@@ -8,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/8bbb55aff3.js" crossorigin="anonymous"></script>
     
-    <title>Proyekto</title>
+    <title>Tiffy Nikz Laboratory - MP1</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -50,7 +50,7 @@
 
 <!------------------------------------------------------CAROUSEL----------------------------------------------------------------------->
 
-    <div class="container-breakpoint">
+    <div class="container-breakpoint" id="Home">
         <div id="carouselExampleCaptions" class="carousel slide carousel-fade ">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -61,7 +61,7 @@
               <div class="carousel-item active">
                 <img src="pictures/sl1.webp" height="600px" width="500px" class="d-block w-100">
                 <div class="carousel-caption d-none d-md-block">
-                  <h1><i>"Trust the expert in precision testing ad analysis-choose our laboratory services."</i></h1>
+                  <h1><i>"Trust the expert in precision testing and analysis-choose our laboratory services."</i></h1>
                 </div>
               </div>
               <div class="carousel-item">
@@ -189,7 +189,7 @@
             <h2>SERVICES</h2>
             <div class="row mb-5">
                 <div class="col-lg-4 col-sm-12">
-                    <div class="card">
+                    <div class="card" id="serve">
                         <img src="pictures/chemistry.jpg" class="card-img-top" height="150px" alt="Clinical-Chemistry">
                         <div class="card-body">
                             <h5 class="card-title">Clinical Chemistry</h5>
@@ -211,7 +211,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-12">
-                    <div class="card">
+                    <div class="card" id="serve">
                         <img src="pictures/hematology.jpeg" class="card-img-top" height="150px" alt="Hematology">
                         <div class="card-body">
                             <h5 class="card-title">Hematology</h5>
@@ -235,7 +235,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-12">
-                    <div class="card">
+                    <div class="card" id="serve">
                         <img src="pictures/clinical microscopy.jpg" class="card-img-top" height="150px" alt="Clinical-Microscopy">
                         <div class="card-body">
                             <h5 class="card-title">Clinical Microscopy</h5>
@@ -260,7 +260,7 @@
 
             <div class="row">
                 <div class="col-lg-4 col-sm-12">
-                    <div class="card">
+                    <div class="card" id="serve">
                         <img src="pictures/bacteriology.jpg" class="card-img-top" height="150px" alt="Clinical-Chemistry">
                         <div class="card-body">
                             <h5 class="card-title">Bacteriology</h5>
@@ -282,7 +282,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-12">
-                    <div class="card">
+                    <div class="card" id="serve">
                         <img src="pictures/blood bank.jpg" class="card-img-top" height="150px" alt="Hematology">
                         <div class="card-body">
                             <h5 class="card-title">Blood-Bank</h5>
@@ -306,7 +306,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-12">
-                    <div class="card">
+                    <div class="card" id="serve">
                         <img src="pictures/serology.jpg" class="card-img-top" height="150px" alt="Clinical-Microscopy">
                         <div class="card-body">
                             <h5 class="card-title">Immuno-Serology</h5>
@@ -330,167 +330,240 @@
             </div>
         </div>
 
-        <!-------------------------------------------facilities----------------------------------------->
+        <!---------------------------------------------FACILITIES------------------------------------------------------------->
         <section class="secfac">
             <h1>Facilities</h1>
     
             <div class="facility">
-                <article>
-                    <div class="image-box">
-                        <img src="pictures/fac1.jpg">
-                    </div>
-    
-                    <div class="content-fac">
-                        <p>
-                            A clinical chemistry facility is a medical laboratory that specializes in analyzing biological specimens, such as blood, urine, and other body fluids, to evaluate a patient's health status. This type of facility performs tests to measure different substances in the body, including enzymes, electrolytes, hormones, lipids, and proteins.</p>
-                        <a href="#services"> Clinical Chemistry</a> 
-                    </div>
-                </article>
-    
-                <article>
-                    <div class="image-box">
-                        <img src="pictures/fac2.jpg">
-                    </div>
-    
-                    <div class="content-fac">
-                        <p>A hematology facility is a medical laboratory that specializes in the analysis of blood and blood-forming tissues to diagnose and manage various medical conditions related to the blood. This type of facility typically performs tests to measure the number and types of blood cells, such as red blood cells, white blood cells, and platelets, as well as their shape, size, and function. The tests can help diagnose and monitor conditions such as anemia, leukemia, bleeding disorders, and infections. </p>
-                        <a href="#services"> Hematology</a> 
-                    </div>
-                </article>
-    
-                <article>
-                    <div class="image-box">
-                        <img src="pictures/fac3.jpg">
-                    </div>
-    
-                    <div class="content-fac">
-                        <p>
-                            A clinical microscopy facility is a medical laboratory that specializes in the analysis of specimens, such as blood, urine, and other body fluids, using microscopes. This facility prepares samples of the specimen on slides and examines them under a microscope to identify and analyze any abnormalities, such as bacteria, viruses, or abnormal cells. Specialized stains and dyes may be used to enhance the visibility of certain structures within the sample. </p>
-                        <a href="#services"> Clinical Microscopy</a> 
-                    </div>
-                </article>
-    
-                <article>
-                    <div class="image-box">
-                        <img src="pictures/fac4.jpg">
-                    </div>
-    
-                    <div class="content-fac">
-                        <p>
-                            A bacteriology facility is a medical laboratory that specializes in the identification and analysis of bacterial pathogens in various types of specimens, such as blood, urine, feces, and body tissues. This type of facility typically performs a variety of tests, such as culture and sensitivity testing, to identify the type of bacteria present and determine the most effective treatment options.</p>
-                        <a href="#services"> Bacteriology</a> 
-                    </div>
-                </article>
-                
-                <article>
-                    <div class="image-box">
-                        <img src="pictures/fac5.jpg">
-                    </div>
-    
-                    <div class="content-fac">
-                        <p>A blood bank facility is a medical laboratory that collects, processes, tests, and stores blood and blood products for transfusion. This type of facility typically obtains blood donations from volunteer donors, processes the blood into various components, and tests the blood for infectious diseases, such as HIV, hepatitis, and syphilis.</p>
-                        <a href="#services"> Blood-Bank</a> 
-                    </div>
-                </article>
-    
-                <article>
-                    <div class="image-box">
-                        <img src="pictures/fac6.jpeg">
-                    </div>
-    
-                    <div class="content-fac">
-                        <p>An immuno-serology facility is a medical laboratory that specializes in the analysis of blood serum to detect and quantify specific antibodies and antigens. This type of facility typically performs tests to identify antibodies produced by the immune system in response to infectious agents, such as viruses and bacteria, or to detect antigens associated with infectious or autoimmune diseases.</p>
-                        <a href="#services"> Immuno-Serology</a> 
-                    </div>
-                </article>
-            </div>
-        </section>
+                <div class="row" >
+                    <div class="col-sm-12 col-md-6 lg-6 faci" >
+                        <article>
+                            <div class="image-box">
+                                <img src="pictures/fac1.jpg">
+                            </div>
+            
+                            <div class="content-fac">
+                                <p>
+                                    A clinical chemistry facility is a laboratory that specializes in the analysis of biological samples such as blood, urine, and other bodily fluids to diagnose and monitor diseases. Clinical chemistry facilities use a variety of techniques to analyze the chemical components of these samples, including spectrophotometry, chromatography, and immunoassays.<br> <br>
 
+                                    The tests performed in a clinical chemistry facility provide important information about a patient's health status, including their electrolyte balance, kidney function, liver function, blood glucose levels, lipid levels, and more. These tests can be used to diagnose a wide range of diseases, including diabetes, heart disease, kidney disease, and liver disease.<br> <br>
+
+                                    Clinical chemistry facilities are staffed by highly trained professionals, including clinical chemists, medical laboratory technologists, and other laboratory staff. These professionals work together to ensure that patient samples are processed accurately and efficiently, and that the results are reported in a timely manner to the physicians and other healthcare providers who rely on this information to diagnose and treat their patients.<br> <br>
+
+                                    In addition to diagnostic testing, clinical chemistry facilities may also perform research to develop new tests and diagnostic tools, or to better understand the underlying mechanisms of disease. They may also provide consultation services to other healthcare providers to help them interpret test results and develop treatment plans for their patients.</p>
+                                <a href="#services"> Clinical Chemistry</a> 
+                            </div>
+                        </article> 
+                    </div>
+                    
+                    <div class="col-sm-12 col-md-6 lg-6 faci">
+                        <article>
+                            <div class="image-box">
+                                <img src="pictures/fac2.jpg">
+                            </div>
+            
+                            <div class="content-fac">
+                                <p>A hematology facility is a laboratory that specializes in the analysis of blood samples to diagnose and monitor blood disorders and diseases. Hematology facilities use a variety of techniques to analyze blood samples, including microscopy, flow cytometry, and molecular testing. <br> <br>
+                                    The tests performed in a hematology facility provide important information about a patient's blood cell counts and function, including red blood cells, white blood cells, and platelets. These tests can be used to diagnose a wide range of blood disorders, including anemia, leukemia, lymphoma, and bleeding disorders. <br> <br>
+                                    Hematology facilities are staffed by highly trained professionals, including hematologists, medical laboratory technologists, and other laboratory staff. These professionals work together to ensure that patient samples are processed accurately and efficiently, and that the results are reported in a timely manner to the physicians and other healthcare providers who rely on this information to diagnose and treat their patients.<br> <br>   
+                                    In addition to diagnostic testing, hematology facilities may also perform research to develop new tests and diagnostic tools, or to better understand the underlying mechanisms of blood disorders and diseases. They may also provide consultation services to other healthcare providers to help them interpret test results and develop treatment plans for their patients. </p>
+                                <a href="#services"> Hematology</a> 
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 lg-6 faci">
+                        <article>
+                            <div class="image-box">
+                                <img src="pictures/fac3.jpg">
+                            </div>
+            
+                            <div class="content-fac">
+                                <p>
+                                    A clinical microscopy facility is a laboratory that specializes in the examination of biological samples under a microscope to diagnose and monitor diseases. Clinical microscopy facilities use a variety of techniques to analyze samples, including brightfield microscopy, fluorescence microscopy, and confocal microscopy. <br> <br>
+                                    The tests performed in a clinical microscopy facility provide important information about a patient's health status, including the presence of infectious agents such as bacteria, fungi, and parasites, as well as the identification of abnormal cells that may indicate cancer or other diseases. <br> <br>
+                                    Clinical microscopy facilities are staffed by highly trained professionals, including medical laboratory technologists, microbiologists, and pathologists. These professionals work together to ensure that patient samples are processed accurately and efficiently, and that the results are reported in a timely manner to the physicians and other healthcare providers who rely on this information to diagnose and treat their patients. <br> <br>
+                                    In addition to diagnostic testing, clinical microscopy facilities may also perform research to develop new diagnostic tools and techniques, or to better understand the mechanisms of disease. They may also provide consultation services to other healthcare providers to help them interpret test results and develop treatment plans for their patients.
+                                
+                                </p>
+                                <a href="#services"> Clinical Microscopy</a> 
+                            </div>
+                        </article>
+                    </div>
+                
+                    <div class="col-sm-12 col-md-6 lg-6 faci">
+                        <article>
+                            <div class="image-box">
+                                <img src="pictures/fac4.jpg">
+                            </div>
+            
+                            <div class="content-fac">
+                                <p>
+                                    A bacteriology facility is a laboratory that specializes in the detection, identification, and characterization of bacterial organisms. Bacteriology facilities use a variety of techniques to analyze samples, including culturing, biochemical testing, and molecular testing. <br> <br>
+                                    The tests performed in a bacteriology facility provide important information about the type of bacterial infection a patient may have, as well as the antibiotic sensitivity of the bacterial strain. This information is crucial for healthcare providers to select the appropriate antibiotics for treatment. <br> <br>
+                                    Bacteriology facilities are staffed by highly trained professionals, including medical laboratory technologists, microbiologists, and infectious disease specialists. These professionals work together to ensure that patient samples are processed accurately and efficiently, and that the results are reported in a timely manner to the physicians and other healthcare providers who rely on this information to diagnose and treat their patients. <br> <br> 
+                                    In addition to diagnostic testing, bacteriology facilities may also perform research to better understand the mechanisms of bacterial infection and resistance to antibiotics. They may also provide consultation services to other healthcare providers to help them interpret test results and develop treatment plans for their patients.
+                                </p>
+                                <a href="#services"> Bacteriology</a> 
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 lg-6 faci">
+                        <article>
+                            <div class="image-box">
+                                <img src="pictures/fac5.jpg">
+                            </div>
+            
+                            <div class="content-fac">
+                                <p>A blood bank facility is a laboratory that collects, processes, and stores blood and blood products for use in transfusions and other medical procedures. Blood bank facilities ensure the safety of the blood supply by screening all donated blood for infectious diseases and testing for blood type compatibility.<br> <br>
+                                    The tests performed in a blood bank facility include blood typing and crossmatching, which are used to determine the ABO and Rh blood groups of the donor and recipient, and to ensure compatibility between the two. Blood bank facilities also perform testing for infectious diseases such as HIV, hepatitis B and C, and syphilis to ensure the safety of the blood supply.<br> <br>
+                                    Blood bank facilities are staffed by highly trained professionals, including medical laboratory technologists, transfusion medicine specialists, and other laboratory staff. These professionals work together to ensure that donated blood is processed accurately and efficiently, and that the blood products are stored and distributed appropriately.<br> <br>
+                                    In addition to blood banking, blood bank facilities may also provide a variety of other services, such as therapeutic apheresis, which is the removal of specific components from the blood, such as plasma or white blood cells, for therapeutic purposes. They may also provide consultation services to other healthcare providers regarding the appropriate use of blood products in transfusions and other medical procedures.
+                                </p>
+                                <a href="#services"> Blood-Bank</a> 
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 lg-6 faci">
+                        
+                        <article>
+                            <div class="image-box">
+                                <img src="pictures/fac6.jpeg">
+                            </div>
+            
+                            <div class="content-fac">
+                                <p>An immuno-serology facility is a laboratory that specializes in the analysis of immune system components and their interactions with antigens to diagnose and monitor infectious and autoimmune diseases. Immuno-serology facilities use a variety of techniques to analyze samples, including enzyme-linked immunosorbent assay (ELISA), Western blotting, and immunofluorescence. <br> <br>
+                                    The tests performed in an immuno-serology facility provide important information about a patient's immune response to infectious agents or self-antigens. For example, immuno-serology tests can detect the presence of antibodies to infectious agents, such as viruses or bacteria, in a patient's blood, indicating a past or current infection. Immuno-serology tests can also detect the presence of autoantibodies, which are antibodies that mistakenly target a patient's own tissues, indicating an autoimmune disease.<br> <br>
+                                    Immuno-serology facilities are staffed by highly trained professionals, including medical laboratory technologists, immunologists, and infectious disease specialists. These professionals work together to ensure that patient samples are processed accurately and efficiently, and that the results are reported in a timely manner to the physicians and other healthcare providers who rely on this information to diagnose and treat their patients.<br> <br>
+                                    In addition to diagnostic testing, immuno-serology facilities may also perform research to develop new tests and diagnostic tools, or to better understand the mechanisms of immune system function and dysfunction. They may also provide consultation services to other healthcare providers to help them interpret test results and develop treatment plans for their patients.
+                                </p>
+                                <a href="#services"> Immuno-Serology</a> 
+                            </div>
+                        </article>
+                    </div>
+                </div>
+        </section>
+       
 
      <!------------------------------------------- LOCATION --------------------------------------------------->
     
-    <div class="location mt-5 mb-5">
-        <br>
-        <h2>Location</h2>
-        <div class="container-loc">
+     <section>
+        <div class="container-fluid mb-5" id="locate">
             <div class="row">
-
-                <div class="col lg-4 sm-12" id="Luzon">
-                    <img class="img-fluid" src="pictures/Luzon.png"> 
+                <h1 class="text-center mt-5">Location</h1>
+                <div class="col-sm-12 col-md-4 lg-4">
+                    <img class="img" src="pictures/Luzon.png">
                     <div class="layer">
                         <h3>Luzon</h3>
                     </div>
                 </div>
-    
-                <div class="col lg-4 sm-12" id="Visayas">
-                    <img class="img-fluid" src="pictures/Visayas.png">
+                <div class="col-sm-12 col-md-4 lg-4">
+                    <img class="img" src="pictures/Visayas.png">
                     <div class="layer">
                         <h3>Visayas</h3>
                     </div>
                 </div>
-
-                <div class="col lg-4 sm-12" id="Mindanao">
-                    <img class="img-fluid" src="pictures/Mindanao.png">
+                <div class="col-sm-12 col-md-4 lg-4">
+                    <img class="img" src="pictures/Mindanao.png">
                     <div class="layer">
                         <h3>Mindanao</h3>
                     </div>
                 </div>
+            </div>
+            </div>
+        </div>
+    </section> 
+    <br>
+    <br>
+    <br>
+
+    <!-------------------------------------------------- CONTACT US ------------------------------------------------------------------------------>
+    <section class = "banner" id="contact-us">
+        <p class="mt-1"><b>Contact Us</b></p>
+        <div>
+                <ul class="message">
+                    <label for="number"><i class="fas fa-phone-square-alt"></i> Phone Number: 09194840325</label>
+                   <br>
+                    <label for="email"><i class="fas fa-envelope"></i> Email: tiffynikzlab@gmail.com</label>
+                </ul>
+        </div>
+        <div class = "card-container">
+            <div class = "card-img"></div>
+
+            <div class = "card-content">
+                <h3>Appointment</h3>
+                <form>
+
+                    <div class = "form-row">
+                        <input type = "text" placeholder="Full Name">
+                    </div>
+
+                    <div class = "form-row">
+                        <input type = "text" placeholder="Phone Number">
+                        <input type = "email" placeholder="Email">
+                    </div>
+
+                    <div class = "form-row">
+                        <select name = "days">
+                            <option value = "day-select">Select Day</option>
+                            <option value = "monday">Monday</option>
+                            <option value = "tuesday">Tuesday</option>
+                            <option value = "wednesday">Wednesday</option>
+                            <option value = "thursday">Thursday</option>
+                            <option value = "friday">Friday</option>
+                            <option value = "saturday">Saturday</option>
+                        </select>
+
+                        <select name = "hours">
+                            <option value = "hour-select">Select Hour</option>
+                            <option value = "10">8: 00 AM</option>
+                            <option value = "10">9: 00 AM</option>
+                            <option value = "10">10: 00 AM</option>
+                            <option value = "10">11: 00 AM</option>
+                            <option value = "10">12: 00 NN</option>
+                            <option value = "10">1: 00 PM</option>
+                            <option value = "10">2: 00 PM</option>
+                            <option value = "10">3: 00 PM </option>
+                            <option value = "10">4: 00PM</option>
+                        </select>
+                    </div>
+
                 
+
+                    <div class = "form-row">
+                        <select name = "location">
+                            <option value = "day-select">Location</option>
+                            <option value = "monday">Luzon</option>
+                            <option value = "tuesday">Visayas</option>
+                            <option value = "tuesday">Mindanao</option>
+                        </select>
+                        <input type = "text" placeholder="Message (optional)">
+                    </div> 
+
+                    <div class = "form-row">
+                        <input type = "submit" value = "SUBMIT" a href="#Home">
+                    </div>
+                </form>
             </div>
         </div>
-    </div>
+    </section>
 
-   <!-------------------------------------- CONTACT US ------------------------------------------------>
-   
-   <div class="container">
-    <div class="row">
-        <div class="col-lg-12 sm-12 md-12">
-            <div class="card" id="contact-us">
-                <div class="form">
-                    <form>
-                        <img src="pictures/Logoz.png" height="150px" width="200px">
-                        <h1>Contact Us</h1>
-                        <br>
-                    
-                        <div class="namephone">
-                            <div class="input-group"> 
-                                <input type="text" id="name" required>
-                                <label for="name"><i class="fas fa-user"></i> Your Name</label>
-                            </div>
-                            <div class="input-group"> 
-                                <input type="text" id="number" required>
-                                <label for="number"><i class="fas fa-phone-square-alt"></i> Phone Number</label>
-                            </div>
-                        </div>
-                        <div class="input-group"> 
-                            <input type="text" id="email" required>
-                            <label for="email"><i class="fas fa-envelope"></i> Email</label>
-                        </div>
-                        <div class="input-group"> 
-                            <textarea id="message" row="8" required></textarea>
-                            <label for="message"><i class="fas fa-comments"></i> Message</label>
-                        </div>
-                        <button type="submit">SUBMIT <i class="fas fa-paper-plane mb"></i></button>
-                        <br>
-                        <br>
-                        <br>
-                    
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
+ <!------------------------------------------------------FOOTER--------------------------------------------------------------------------------->
     <footer>
         <div class="container-fluid" id="ftr">
             <div class="row" id="ftr1">
                 <div class="col-md-4" id="ftr2">
-                    <h3>About Us</h3>
+                    <h3 class="text-primary">About Us</h3>
                     <p>"Dedicated to providing accurate and reliable diagnostic services to healthcare providers and patients."</p>
                 </div>
                 <div class="col-md-4" id="ftr2">
-                    <h3>Contact Us</h3>
+                    <h3 class="text-primary">Contact Us</h3>
                     <p>Send us a message!</p>
                     <ul class="message">
                         <li>Phone: 09194840325</li>
@@ -498,7 +571,7 @@
                     </ul>
                 </div>
                 <div class="col-md-4" id="ftr2">
-                    <h3>Follow Us</h3>
+                    <h3 class="text-primary">Follow Us</h3>
                     <ul class="social-icon">
                         <li><a href="facebook"><i class="fa-brands fa-facebook"></i></a></li>
                         <li><a href="instagram"><i class="fa-brands fa-instagram"></i></a></li>
